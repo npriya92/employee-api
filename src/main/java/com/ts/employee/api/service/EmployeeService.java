@@ -1,15 +1,16 @@
 package com.ts.employee.api.service;
 
 import java.util.List;
+import java.util.Optional;
 
-import com.ts.employee.api.modal.Employee;
+import com.ts.employee.api.entities.Employee;
 
 
 public interface EmployeeService {
 	
 	public List<Employee> findAll();
 	
-	public Employee getEmployee(Long empId);
+	public Optional<Employee> getEmployee(Long empId);
 	
 	List<Employee> findByEmail(String email);
 	

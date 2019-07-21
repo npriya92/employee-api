@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ts.employee.api.modal.Employee;
+import com.ts.employee.api.entities.Employee;
 import com.ts.employee.api.repository.EmployeeRepository;
 
 @Service
@@ -29,9 +29,8 @@ public class EmployeeServiceImpl implements EmployeeService{
 	}
 
 	
-	public Employee getEmployee(Long empId) {
-		Optional<Employee> emp=employeeRepository.findById(empId);
-		return emp.get();
+	public Optional<Employee> getEmployee(Long empId) {		
+		return employeeRepository.findById(empId);
 	}
 
 	@Override

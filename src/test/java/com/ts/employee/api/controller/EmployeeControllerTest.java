@@ -17,7 +17,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.ts.employee.api.modal.Employee;
+import com.ts.employee.api.entities.Employee;
 import com.ts.employee.api.service.EmployeeService;
 
 @RunWith(SpringRunner.class)

@@ -1,4 +1,4 @@
-package com.ts.employee.api.modal;
+package com.ts.employee.api.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,7 +21,7 @@ public class Employee {
 	private String name;
 	@Column(name="EMPLOYEE_SALARY")
 	private Integer salary;
-	private String department;
+	private String depid;
 	private String email;
 	
 
